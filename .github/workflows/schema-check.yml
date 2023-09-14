@@ -21,7 +21,7 @@ jobs:
 
       - name: Export schema
         run:
-          pdm run strawberry export-schema --schema app.schema > schema.graphql
+          pdm run strawberry export-schema app.schema > schema.graphql
 
       - name: Install Rover
         run: |
