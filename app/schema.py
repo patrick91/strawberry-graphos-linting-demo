@@ -24,7 +24,7 @@ def save_data(data: Any):
     data_path.write_text(json.dumps(data))
 
 
-@strawberry.type
+@strawberry.type(name="UserType")
 class User:
     id: strawberry.ID
     name: str
